@@ -1,0 +1,71 @@
+       /* importa a fonte "boboto" do google fonts em divversos estilos e pesos*/
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+       :root {
+           /*paleta escolhida*/
+
+           --main-color: #a8bdb1;
+           /*--cor principal: #a8bdb1;*/
+           --bg: #f8f8f5;
+           --br-card: #9c969698;
+           --border: 0.1rem #d6c7b0;
+           /*fronteira*/
+
+       }
+
+       * {
+           padding: 0;
+           /*espaçamento 0 dentro dos boxes*/
+           margin: 0;
+           /*espaçamento externo, deistancia entre um elemento e outro ao seu redor*/
+           text-decoration: none;
+           /*elimina pontos e traços dos textos qdo selecionado none (nenhum)*/
+           text-transform: capitalize;
+           /*captaliza o texto, colocando a primeira letra maiúscula*/
+           transition: 0.2s linear;
+           /*efeito suave entre dois estados do elemento, duração da transição (0.2s) constante (linear)*/
+           border: none;
+           scroll-behavior: smooth;
+       }
+
+       header {
+           background-color: var(--bg);
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 1.5rem 7%;
+           /* explicação do uso da porcentagem*/
+           border-bottom: var(--border);
+           position: sticky;
+           /* sticky posição do header*/
+           top: 0;
+           left: 0;
+           z-index: 999;
+
+           font-weight: lighter;
+           /* peso da fonte mais leve*/
+
+
+       }
+
+
+       .pcdt {
+           padding: 10rem;
+           /*espaçamento interno*/
+           background-color: var(--bg);/*cor de fundo*/
+
+       }
+
+       .pcdt p {
+           color: var(--br-card);
+       }
+
+       .cln a {
+           display: flex;
+           justify-content: space-evenly;
+           box-shadow: rgba(255, 255, 224, 0.589);
+           /*add sombra ao redor do elemento*/
+
+
+
+       }
