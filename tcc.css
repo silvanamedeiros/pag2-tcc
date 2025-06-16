@@ -1,52 +1,173 @@
-       /* importa a fonte "boboto" do google fonts em divversos estilos e pesos*/
-       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*
+/* importa a fonte "boboto" do google fonts em divversos estilos e pesos*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-       :root {
-           /*paleta escolhida*/
+:root {
+    /*paletas escolhida*/
 
-           --main-color: #a8bdb1;
-           /*--cor principal: #a8bdb1;*/
-           --bg: #f8f8f5;
-           --br-card: #9c969698;
-           --border: 0.1rem #d6c7b0;
-           /*fronteira*/
+    --main-color: #a8bdb1;
+    /*--cor principal: #a8bdb1;*/
+    --bg: #f8f8f5;
+    --br-card: #3d3d3d;
+    --border: 0.1rem #d6c7b0;
+    /*fronteira*/
 
-       }
-
-       * {
-           padding: 0;
-           /*espaçamento 0 dentro dos boxes*/
-           margin: 0;
-           /*espaçamento externo, deistancia entre um elemento e outro ao seu redor*/
-           text-decoration: none;
-           /*elimina pontos e traços dos textos qdo selecionado none (nenhum)*/
-           text-transform: capitalize;
-           /*captaliza o texto, colocando a primeira letra maiúscula*/
-           transition: 0.2s linear;
-           /*efeito suave entre dois estados do elemento, duração da transição (0.2s) constante (linear)*/
-           border: none;
-           scroll-behavior: smooth;
-       }
-
-       header {
-           background-color: var(--bg);
-           display: flex;
-           align-items: center;
-           justify-content: space-between;
-           padding: 1.5rem 7%;
-           /* explicação do uso da porcentagem*/
-           border-bottom: var(--border);
-           position: sticky;
-           /* sticky posição do header*/
-           top: 0;
-           left: 0;
-           z-index: 999;
-
-           font-weight: lighter;
-           /* peso da fonte mais leve*/
+}
 
 
-       }
+* {
+    margin: 0;
+    /*margem*/
+    padding: 0;
+    /*preenchimento*/
+    box-sizing: border-box;
+    /*dimensionamento de caixa*/
+
+    font-family: 'Roboto', 'sans-serif';
+    /*família de fontes Roboto sem serifa*/
+
+    text-decoration: none;
+    /*decoração de texto nenhuma*/
+
+   /* text-transform: capitalize;*/
+    /* text-transform: capitalize; transformação de texto: capitalizar em letras mauscula*/
+
+    transition: 0.2s linear;
+    /*transição*/
+
+    outline: none;
+    /*não delinear nenhum (esboço: nenhum*/
+
+    border: none;
+    /*fronteira: nenhuma*/
+
+    scroll-behavior: smooth;
+    /*comportamento de rolagem: suave*/
+
+}
+
+html {
+    font-size: 68.5%;
+    /*configuração do font-size para 62.5%, facilitando o uso do rem (1rem = 10px)*/
+    overflow-x: hidden;
+    /*estouro x oculto*/
+    
+
+}
+
+body {
+    flex-wrap: wrap;
+    /*permite que os itens quebrem para a proxima limha se necessário*/
+    /* background-color: #a8bdb1;*/
+    /*background: var(--bg); /*plano de fundo: var*/
+
+}
+
+/*inicio do header*/
+header {
+
+    background-color: #a8bdb1;
+    /*tira depois o background-color: #a8bdb1*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    /* explicação do uso da porcentagem*/
+    border-bottom: var(--border);
+    position: sticky;
+    /* sticky posição do header*/
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    font-weight: lighter;
+    /* peso dea fonte mais leve*/
+
+
+}
+
+.logo img {
+
+    height: 6.5rem;
+    /*define a altura da logo */
+    border-radius: 100%;
+    /*torna a logo circular*/
+
+}
+
+.div-logo {
+    color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+
+}
+
+.div-logo:hover {
+    color: #f8f8f5;
+    /* mudar a cor do icone ao passar o mause*/
+}
+
+
+h4 {
+    font-size: 1rem;
+
+}
+
+
+.ul-header {
+    display: flex;
+    /*  display: flex diixa a home lado a lado*/
+    gap: 8rem;
+    /* gap: deixa a home no topo*/
+    list-style: none;
+    /* tirá as bolinhas das homes sempre na ul*/
+
+}
+
+.ul-header li a {
+
+    color: #3d3d3d;
+    /*cor do texto*/
+    font-family: 1.6rem;
+    /* tamanho da fonte do texto*/
+
+}
+
+/*inicio do hover*/
+.ul-header li a:hover {
+    color: #f8f8f5;
+    /* hover mudar a cor do texto ao passar o mause no hover */
+    border-bottom: 0.1rem solid var(--main-color);
+    /* hover adicionar uma linha ao texto quando passa o mause inferior no hover*/
+    padding-bottom: 0.5rem;
+    /*adiciona espaçamento inferior no hover*/
+}
+
+.icons {
+    /* não estou mexendo nos icones, e sim na caixa */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.icons i {
+
+    color: #3d3d3d;
+    /* cor para icones*/
+    cursor: pointer;
+    /* altera o cursor ao passar sobre o icones*/
+    font-size: 2.5rem;
+    /* tamanho do icones*/
+}
+
+.icons i:hover {
+    color: #f8f8f5;
+    /* mudar a cor do icone ao passar o mause*/
+}
 
 
        .pcdt {
