@@ -12,43 +12,9 @@
     --border: 0.1rem #d6c7b0;
     /*fronteira*/
 
-<<<<<<< Updated upstream
+
 }
-=======
 
-       * {
-           padding: 0;
-           /*espaçamento 0 dentro dos boxes*/
-           margin: 0;
-           /*espaçamento externo, distancia entre um elemento e outro ao seu redor*/
-           text-decoration: none;
-           /*elimina pontos e traços dos textos qdo selecionado none (nenhum)*/
-           text-transform: capitalize;
-           /*captaliza o texto, colocando a primeira letra maiúscula*/
-           transition: 0.2s linear;
-           /*efeito suave entre dois estados do elemento, duração da transição (0.2s) constante (linear)*/
-           border: none;
-           scroll-behavior: smooth;
-       }
-
-       header {
-           background-color: var(--bg);
-           display: flex;
-           align-items: center;
-           justify-content: space-between;
-           padding: 1.5rem 7%;
-           /* explicação do uso da porcentagem*/
-           border-bottom: var(--border);
-           position: sticky;
-           /* sticky posição do header*/
-           top: 0;
-           left: 0;
-           z-index: 999;
-
-           font-weight: lighter;
-           /* peso da fonte mais leve*/
-       }
->>>>>>> Stashed changes
 
 
 * {
@@ -86,15 +52,16 @@ html {
     /*configuração do font-size para 62.5%, facilitando o uso do rem (1rem = 10px)*/
     overflow-x: hidden;
     /*estouro x oculto*/
-    
+
 
 }
 
 body {
     flex-wrap: wrap;
     /*permite que os itens quebrem para a proxima limha se necessário*/
-     background-color: #a8bdb1;
-    background: var(--bg); /*plano de fundo: var*/
+    background-color: #a8bdb1;
+    background: var(--bg);
+    /*plano de fundo: var*/
 
 }
 
@@ -154,7 +121,7 @@ h4 {
 .ul-header {
     display: flex;
     /*  display: flex deixa a home lado a lado*/
-    gap: 8rem;
+    gap: 5rem;
     /* gap: deixa a home no topo*/
     list-style: none;
     /* tirá as bolinhas das homes sempre na ul*/
@@ -165,7 +132,7 @@ h4 {
 
     color: #3d3d3d;
     /*cor do texto*/
-    font-family: 1.6rem;
+    font-size: 1.5rem;
     /* tamanho da fonte do texto*/
 
 }
@@ -175,7 +142,7 @@ h4 {
     color: #f8f8f5;
     /* hover mudar a cor do texto ao passar o mause no hover */
     border-bottom: 0.1rem solid var(--main-color);
-    /* hover adicionar uma linha ao texto quando passa o mause inferior no hover*/
+    /* hover adicionar uma linha ao texto quando passa o mouse inferior no hover*/
     padding-bottom: 0.5rem;
     /*adiciona espaçamento inferior no hover*/
 }
@@ -184,7 +151,7 @@ h4 {
     /* não estou mexendo nos icones, e sim na caixa */
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
 
 
 }
@@ -195,7 +162,7 @@ h4 {
     /* cor para icones*/
     cursor: pointer;
     /* altera o cursor ao passar sobre o icones*/
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* tamanho do icones*/
 }
 
@@ -205,23 +172,38 @@ h4 {
 }
 
 
-       .pcdt {
-           padding: 10rem;
-           /*espaçamento interno*/
-           background-color: var(--bg);/*cor de fundo*/
+.box {
+    padding: 30rem;
+    /*espaçamento interno*/
+    background-color: #a8bdb1;
+    /*cor de fundo*/
 
-       }
+}
 
-       .pcdt p {
-           color: var(--br-card);
-       }
+.text {
+    color: #3d3d3d;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-       .cln a {
-           display: flex;
-           justify-content: space-evenly;
-           box-shadow: rgba(255, 255, 224, 0.589);
-           /*add sombra ao redor do elemento*/
+.prc img {
+    width: 13rem;
+    height: 13rem;
+}
+
+h5 {
+    color: #3d3d3d;
+    font-size: 3rem;
+    text-align: center
+}
 
 
+.box .cln {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1rem;
+    height: 1rem;
+   
 
-       }
+}
