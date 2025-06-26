@@ -9,7 +9,7 @@
     /*cor principal*/
     --bg: #a8bdb1;
     --br-card: #817f7f;
-    --border: 1.5rem #160e02;
+    --border: 1.5rem solid #160e02;
     /*fronteira*/
 
 
@@ -39,8 +39,7 @@
     outline: none;
     /*não delinear nenhum (esboço: nenhum*/
 
-    border: none;
-    /*fronteira: nenhuma*/
+   
 
     scroll-behavior: smooth;
     /*comportamento de rolagem: suave*/
@@ -74,7 +73,7 @@ header {
     justify-content: space-between;
     padding: 5rem 7%;
     /* explicação do uso da porcentagem*/
-    border-bottom: var(--border);
+    border-bottom: 0.5rem solid #e2dfd9;
     position: sticky;
     /* sticky posição do header*/
     top: 0;
@@ -139,7 +138,7 @@ h4 {
 .ul-header li a:hover {
     color: #f8f8f5;
     /* hover muda a cor do texto ao passar o mouse*/
-    border-bottom: 0.1rem solid var(--main-color);
+    border-bottom: 0.5rem solid #e2dfd9;
     /* adiciona uma linha inferior ao texto quando passa o mouse*/
     padding-bottom: 0.5rem;
     /*adiciona espaçamento inferior*/
@@ -181,16 +180,23 @@ h4 {
 
 
 .procedimento .box {
-    padding: 5rem; /*add espaçamento interno ao redor do conteúdo da caixa*/
+    padding: 2rem; /*add espaçamento interno ao redor do conteúdo da caixa*/
     text-align: center;/*centraliza o texo*/
-    border: var(--border); /*aplicando uma borda ao redor da caixa*/
+    border: 0.5rem solid #e2dfd9; /*aplicando uma borda ao redor da caixa*/
     background: var(--bg-card); /*define a cor de fundo da caixa*/
-    border: #3d3d3d;/*aplica borda ao redor da caixa*/
+    
 }
 
 .procedimento .box img {
-    height: 20rem;/*define a altura da img*/
+    height: 10rem;/*define a altura da img*/
+    width: 10rem;
    
+}
+
+p {
+    padding: 2rem;
+    font-size: 2rem;
+    color: #3d3d3d;  
 }
 
 .cln {
@@ -204,21 +210,22 @@ h4 {
 
 
 .cln .box {
-    padding: 8rem; /*add espaçamento interno ao redor do conteúdo da caixa*/
+    padding: 2rem; /*add espaçamento interno ao redor do conteúdo da caixa*/
     text-align: center;/*centraliza o texo*/
-    border: var(--border); /*aplicando uma borda ao redor da caixa*/
+    border: 0.5rem solid #e2dfd9; /*aplicando uma borda ao redor da caixa*/
     background: var(--bg-card); /*define a cor de fundo da caixa*/
-    border: #3d3d3d;/*aplica borda ao redor da caixa*/
+    
     gap: 3rem;
 }
 
 .cln .box img {
-    height: 20rem;/*define a altura da img*/
-    width: 20rem;
+    height: 16rem;/*define a altura da img*/
+    width: 16rem;
    
 }
 
 .cln .box p {
+    padding: 2rem;
     font-size: 2rem;
     color: #3d3d3d;
 
@@ -228,23 +235,10 @@ h4 {
 h5 {
     font-size: 3rem;/*tamanho da fonte*/
     text-align: center;/*alinhando o texto ao centro*/
-    padding: 2 2 1.8rem;/*espaçamento interno entre o texto e a margem*/
+    padding: 1.8rem;/*espaçamento interno entre o texto e a margem*/
     border: #a8bdb1;/*aplicando borda*/
+    margin-bottom: 2rem;
 }
-
-
-p {
-    font-size: 2rem;
-    color: #3d3d3d;
-}
-
-
-h5 {
-    color: #3d3d3d;
-    font-size: 3rem;
-    text-align: center
-}
-
 
 footer {
     color: #3d3d3d;
@@ -350,15 +344,19 @@ footer a {
     bottom: 5rem;
     right: 5rem;
     background-color: #25d366;
-    color: white;
     border-radius: 100%;
-    width: 5rem;
-    height: 5rem;
+    width: 5rem;   
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 5rem;
-    z-index: 1000;
+    z-index: 100;
+    font-size: 10rem;
+}
+
+
+.botao-whats i {
+    font-size: 3rem;
+    color: #f8f8f5;
 }
 
 /* responcivel*/
