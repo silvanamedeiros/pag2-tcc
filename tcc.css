@@ -205,7 +205,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
     /*Cria colunas flexiveis com larg. min. de 30rem e máx. proporcional*/
     gap: 1rem; /*Define o espaçamento entre os itens da grade*/
-   
+    align-items: center;
 }
 
 
@@ -213,14 +213,13 @@ p {
     padding: 2rem; /*add espaçamento interno ao redor do conteúdo da caixa*/
     text-align: center;/*centraliza o texo*/
     border: 0.5rem solid #e2dfd9; /*aplicando uma borda ao redor da caixa*/
-    background: var(--bg-card); /*define a cor de fundo da caixa*/
-    
-    gap: 3rem;
+    background: #817f7f; /*define a cor de fundo da caixa*/
+    gap: 0.5rem;
 }
 
 .cln .box img {
-    height: 16rem;/*define a altura da img*/
-    width: 16rem;
+    height: 10rem;/*define a altura da img*/
+    width: 10rem;
    
 }
 
@@ -236,7 +235,7 @@ h5 {
     font-size: 3rem;/*tamanho da fonte*/
     text-align: center;/*alinhando o texto ao centro*/
     padding: 1.8rem;/*espaçamento interno entre o texto e a margem*/
-    border: #a8bdb1;/*aplicando borda*/
+    border: solid #a8bdb1 ;/*aplicando borda*/
     margin-bottom: 2rem;
 }
 
